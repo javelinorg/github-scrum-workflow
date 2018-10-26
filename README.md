@@ -83,6 +83,7 @@ You can define and assign custom labels that you need within your workflow or or
 You can create a Project for every Sprint and add backlog items (issues) to the Project during the planning phase of the Sprint.
 
 This allows you to group items in sprints and track their progress inside your repostory via the GitHub Projects view as well as GitHub Milestones.
+![en_project_view](./project_view.png)
 
 The backlog then consists of all items (issues) that have no `milestone` attached to it.
 
