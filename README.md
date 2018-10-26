@@ -2,6 +2,8 @@
 
 # GitHub scrum workflow
 
+*This is a fork of the work done by jvandemo and his [documentation](https://github.com/jvandemo/github-scrum-workflow)*
+
 Turn any GitHub repository into a simple but powerful agile work environment.
 
 **Free**, **simple** and **fast** so you can focus on the actual coding!
@@ -21,15 +23,16 @@ Turn any GitHub repository into a simple but powerful agile work environment.
 
 ## How it works
 
-- Backlog Items are reported as **issues**
-- User Story Points (complexity) and meta data are assigned to Backloag Items as **labels**
-- **Projects** are used to group issues in sprints
+- Backlog Items are reported as **issues**.
+- User Story Points (complexity) and meta data are assigned to Backloag Items as **labels**.
+- **Projects** are used to group issues in sprints.
+- **Milestones** are used by the Product Owner to capture Product Features and their associated Backlog Items **issues**.
 
 ## 1. Create issues as backlog items
 
 To create a new backlog item, just create a new issue.
 
-Once a new issue has been created, assign it the right labels and/or assign it to a milestone.
+Once a new issue has been created, assign it the right labels and assign it to a milestone.
 
 Issues allow you to have a conversation about the item and even allow you to create task lists inside the issue using [GitHub's markdown](https://guides.github.com/features/mastering-markdown/).
 
@@ -75,17 +78,17 @@ Add the following labels to your repository:
 
 You can define and assign custom labels that you need within your workflow or organization.
 
-## 3. Define sprints as milestones
+## 3. Sprints are defined as GitHub Projects
 
-You can create a milestone for every sprint and add items (issues) from the backlog to a milestone.
+You can create a Project for every Sprint and add backlog items (issues) to the Project during the planning phase of the Sprint.
 
-This allows you to group items in sprints and track them by milestone in your [issue dashboard](https://github.com/issues).
+This allows you to group items in sprints and track their progress inside your repostory via the GitHub Projects view as well as GitHub Milestones.
 
 The backlog then consists of all items (issues) that have no `milestone` attached to it.
 
 **TIP**: Use `no:milestone` in the search field on your [issue dashboard](https://github.com/issues) to find backlog items.
 
-## Overview
+## Scrum Overview
 
 ![en_overview](https://cloud.githubusercontent.com/assets/1859381/5411950/c44c229e-8207-11e4-915f-d31ccd66c5bd.png)
 
@@ -106,3 +109,7 @@ Image: [Scrum primer](http://www.scrumprimer.org/overview).
 ### v1.0.1
 
 - Added summary
+
+### v1.1.0
+
+- Reorganized GitHub feature usage to better aling with Scrum methodology
