@@ -11,32 +11,28 @@ Turn any GitHub repository into a simple but powerful agile work environment.
 **Summary:**
 
 + [How it works](#how-it-works)
-+ [1. Create issues as backlog items](#1-create-issues-as-backlog-items)
-+ [2. Add labels to issues](#2-add-labels-to-issues)
-+ [3. Define milestones as user stories](#3-define-milestones-as-user-stories)
-+ [4. Define pojects as sprints](#3-define-projects-as-sprints)
-+ [Overview](#overview)
++ [Setup Your GitHub Repository](#setup-your-github-repository)
++ [The Scrum Process Flow](#the-process-flow)
+  + [1. Product Owner creates Milestones to identify Product requierments](#1-product-owner-creates-milestones-to-identify-product-requierments)
+  + [2. The Development Team creates issues as Backlog Items](#2-the-development-team-creates-issues-as-backlog-items)
+  + [3. Sprints are defined as GitHub Projects](#3-sprints-are-defined-as-gitHub-projects)
++ [Overview](#scrum-overview)
 + [Helpful links](#helpful-links)
 + [Change log](#change-log)
 
 ---
 
 ## How it works
-
+- **Milestones** are used by the Product Owner to capture features for the given Product.
 - Backlog Items are reported as **issues**.
-- User Story Points (complexity) and meta data are assigned to Backloag Items as **labels**.
-- **Projects** are used to group issues in sprints.
-- **Milestones** are used by the Product Owner to capture Product Features and their associated Backlog Items **issues**.
+- User Story Points (complexity), priority, and type are assigned to Backloag Items as **labels**.
+- **Projects** are used to group **issues** into Sprints.
+- The Development Team associates **issues** to **Milestones**.
+- **Issues** can become their own **Milestone** if the scope is large enough to span multiple Sprints.
 
-## 1. Create issues as backlog items
+# Setup Your GitHub Repository
 
-To create a new backlog item, just create a new issue.
-
-Once a new issue has been created, assign it the right labels and assign it to a milestone.
-
-Issues allow you to have a conversation about the item and even allow you to create task lists inside the issue using [GitHub's markdown](https://guides.github.com/features/mastering-markdown/).
-
-## 2. Add labels to issues
+## Add labels to issues
 
 Add the following labels to your repository:
 
@@ -77,17 +73,28 @@ Add the following labels to your repository:
 ### Other
 
 You can define and assign custom labels that you need within your workflow or organization.
+This allows the Development Team to group items in sprints and track progress inside your repostory via the GitHub Projects view as well as GitHub Milestones.
+
+# The Process Flow
+
+## 1. Product Owner creates Milestones to identify Product requierments
+
+The Product owner creates a Milestone to identify the Product feature. The Product Owner is also responsible for creating a parent **issue** further defining feature requierments.
+
+## 2. The Development Team creates issues as Backlog Items
+
+To create a new backlog item, simply create a new issue and assign it the associated **Milestone**. Also assign correct labels, specifying the points (complexity) and type. It is the Product Owner's responsiblity to specify priority.
+
+Issues allow the Development Team to have a conversation about the item. You can create task lists inside the issue using [GitHub's markdown](https://guides.github.com/features/mastering-markdown/) to help better orianize the solution to the task.
 
 ## 3. Sprints are defined as GitHub Projects
 
-You can create a Project for every Sprint and add backlog items (issues) to the Project during the planning phase of the Sprint.
-
-This allows you to group items in sprints and track their progress inside your repostory via the GitHub Projects view as well as GitHub Milestones.
+The Scrum Master creates a **Project** for every Sprint. During the planning phase of the Sprint, the devlopment team places backlog items (**issues**) into the "To Do" bucket. As members of the Deveopment Team start to work on an **issue** it is moved into the "In Progress" bucket. The same goes for when an **issue** is completed. *GitHub has simple **Project** automations that move items to the Done bucket when an issue is closed.*
 ![en_project_view](./project_view.png)
 
-The backlog then consists of all items (issues) that have no `milestone` attached to it.
+The Product Backlog then consists of all items (issues) that have no `project` attached to it.
 
-**TIP**: Use `no:milestone` in the search field on your [issue dashboard](https://github.com/issues) to find backlog items.
+**TIP**: Use `no:project` in the search field on your [issue dashboard](https://github.com/issues) to find unasigned Backlog items.
 
 ## Scrum Overview
 
