@@ -73,7 +73,6 @@ Add the following labels to your repository:
 ### Other
 
 You can define and assign custom labels that you need within your workflow or organization.
-This allows the Development Team to group items in sprints and track progress inside your repostory via the GitHub Projects view as well as GitHub Milestones.
 
 # The Process Flow
 
@@ -83,7 +82,9 @@ The Product owner creates a Milestone to identify the Product feature. The Produ
 
 ## 2. The Development Team creates issues as Backlog Items
 
-To create a new backlog item, simply create a new issue and assign it the associated **Milestone**. Also assign correct labels, specifying the points (complexity) and type. It is the Product Owner's responsiblity to specify priority.
+To create a new backlog item, simply create a new issue and assign it the associated **Milestone** (Product Feature) and correct labels, specifying the points (complexity) and type.
+The Product Owner sets the priority.
+During Sprint planning, the Development Team decides if they can add the **issue** to the Sprint (**Project**).
 
 Issues allow the Development Team to have a conversation about the item. You can create task lists inside the issue using [GitHub's markdown](https://guides.github.com/features/mastering-markdown/) to help better orianize the solution to the task.
 
